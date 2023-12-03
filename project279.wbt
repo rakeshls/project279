@@ -1,0 +1,46 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+  info [
+    "This world shows all the base graphical geometries."
+  ]
+  title "Base graphical geometries"
+}
+Viewpoint {
+  orientation -0.23674316105654722 0.37604581719708124 0.8958472074307833 0.8159212167832349
+  position -4.6231480588817755 -7.229125308755432 3.898680798921188
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF PLANE Transform {
+  translation 6 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.621333 0.264 0.8
+        roughness 0.2
+        metalness 0
+      }
+      geometry Plane {
+        size 0.6 0.6
+      }
+    }
+  ]
+}
+DEF SPHERE Transform {
+  translation 8 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0.621333
+        roughness 0.2
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+        subdivision 2
+      }
+    }
+  ]
+}
